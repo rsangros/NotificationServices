@@ -8,7 +8,6 @@ import org.h2.tools.Server;
 @SpringBootApplication
 public class NotificationPreferencesServiceApplication {
 
-
 	@Bean(initMethod = "start", destroyMethod = "stop")
 	public Server inMemoryH2DatabaseServer() throws Exception  {
 		return Server.createTcpServer(
